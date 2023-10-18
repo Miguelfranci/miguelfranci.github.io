@@ -1,0 +1,133 @@
+
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-shape-divider-bottom-1697630898 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697630898 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 79px;
+}
+
+.custom-shape-divider-bottom-1697630898 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.footer {
+    margin-top: 5%;
+    background-color: var(--cor-primaria);
+    color: black;
+    text-align: center;
+    padding: 0;
+}
+
+.footer img.logo {
+    width: 5%;
+    height: auto;
+}
+
+:root {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #27ae60;
+    --cor-texto: #333;
+    /* TAMANHOS */
+    --tamanho-menu: 65px;
+    --tamanho-titulo: 125%;
+    --tamanho-logo: 100px;
+    --tamanho-botoes: 27px;
+}
+
+body {
+    background-color: var(--cor-texto);
+    color: var(--cor-texto);
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+.logo {
+    margin: 0;
+    width: var(--tamanho-logo);
+    height: var(--tamanho-logo);
+    z-index: 0;
+}
+
+.texto1 {
+    margin: 4.5%;
+    color: white;
+}
+
+.TextoInicial {
+    margin-bottom: 10%;
+    width: 45%;
+    margin: 1%;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: justify;
+    text-align: center;
+    background-color: white;
+    color: var(--cor-texto);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.TextoInicial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    background-color: var(--cor-primaria);
+    color: black;
+    margin: 0.5%;
+}
+
+.TextoInicial.inactive {
+    opacity: 0.7; /* Aplica opacidade quando a classe "inactive" está presente */
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.material-symbols-outlined {
+    font-size: 250%;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 37;
+    float: left;
+    margin-right: 5px;
+    line-height: 1;
+    background-color: var(--cor-primaria);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TextoInicial {
+        width: 80%;
+        margin: 2%;
+    }
+}

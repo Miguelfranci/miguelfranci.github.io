@@ -1,0 +1,184 @@
+@font-face {
+    font-family:'fonte';
+    src: url("./fonte/WorkSans-VariableFont_wght.ttf");
+}
+
+/* Quando a tela tiver uma largura máxima de 768px (ajuste o valor conforme necessário) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Altera a direção da flexbox para uma coluna */
+    }
+    .TextoInicial {
+        flex-grow: 1; /* As divs expandirão para preencher o espaço disponível verticalmente */
+    }
+}
+
+/* shape divider top */
+.custom-shape-divider-top-1697595050 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697595050 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+}
+
+.custom-shape-divider-top-1697595050 .shape-fill {
+    fill: var(--cor-shape-top);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root{
+    /* CORES */
+    --mr-white:white;
+    --cor-corpo: #2F353B;
+    --cor-cabeca: #1e1e1e;
+    --cor-texto:#020202;
+    --cor-texto-hover:#;
+    --cor-shape-top:#fff;
+    --cor-shape-bottom:#fff;
+
+    --cor-primaria: #3498db; /* Azul */
+    --cor-secundaria: #27ae60; /* Verde */
+    --cor-texto: #333; /* Cor do texto */
+
+    /* TAMANHOS */
+    --tamanho-menu: 65px;
+    --tamanho-titulo:125%;
+    --tamanho-logo: 100px;
+    --tamanho-botoes: 27px;
+
+}
+
+/* icons */
+span.material-symbols-outlined {
+    font-size: 250%; /* Aumente o tamanho do ícone */
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 37;
+    float: left; /* Faça o ícone flutuar à esquerda */
+    margin-right: 10px; /* Adicione margem à direita do ícone para espaço */
+    line-height: 1; /* Ajuste a altura da linha para centralizar verticalmente o ícone */
+}
+span.material-symbols-outlined.icon-diamond{
+    font-size: 11110%;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 37;
+
+}
+
+/* codigos aleatorios */
+
+
+/* roda pe footer */
+.footer {
+    width: 0.1rems;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center;
+    padding:0;
+    margin: 0;
+}
+
+/* cabecario */
+
+header{
+    width: 100%;
+    height: var(--tamanho-menu);
+
+    font-size: var(--tamanho-titulo);
+    font-family: 'fonte';
+    color: var(--mr-white);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+body {
+    background-color: var(--cor-texto);
+    color: var(--cor-texto);
+}
+
+
+/* corpo */
+
+.TextoInicial{
+    margin:1%;
+    width: 30%;
+    height: 30%;
+    padding: 20px;
+    
+    border-radius: 15px;
+    text-align: justify;
+    text-align: center;
+    background-color: var(--cor-texto);
+    color: var(--mr-white);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+
+.texto1{
+    margin-top: 5.5%;
+    margin-bottom: 5%;
+    margin: 2%;
+}
+
+.TextoInicial:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% quando o mouse passa sobre a div */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7); /* Adiciona uma sombra neon branca quando passa o mouse */
+    background-color: var(--cor-cabeca); /* Altera a cor de fundo ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .TextoInicial {
+        margin: 10px;
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    overflow-x: auto;
+}
+
+.logo{
+    margin: 20px;
+    width: var(--tamanho-logo);
+    height: var(--tamanho-logo);
+    z-index: 0;
+}

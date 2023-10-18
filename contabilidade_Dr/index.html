@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenrir</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" class="logo" href="logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- <header>
+        <div class="custom-shape-divider-top-1697595050">
+        </div>
+        <img class="logo" src="logo.png" alt="Logo da Empresa">
+    </header> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+    $(".TextoInicial").hover(
+        function () {
+            // Ao passar o mouse sobre uma .TextoInicial
+            $(".TextoInicial").not(this).addClass("inactive"); // Adicione a classe "inactive" às outras .TextoInicial
+        },
+        function () {
+            // Quando o mouse sai da .TextoInicial
+            $(".TextoInicial").removeClass("inactive"); // Remova a classe "inactive" de todas as .TextoInicial
+        }
+    );
+});
+</script>
+    <div class="texto1">
+        <h1>Controle total das finanças: confie sua empresa a especialistas contábeis!</h1>
+        <br>
+        <h2>Nossos serviços são:</h2>
+        <div class="center">
+            <div class="container">
+                <div class="TextoInicial" id="texto1">
+                    <p><span class="material-symbols-outlined">home</span><h1>Assessoria Imobiliária</h1>Encontre o imóvel dos seus sonhos ou maximize o retorno dos seus investimentos imobiliários com a nossa Assessoria Imobiliária. Com vasta experiência no mercado, estamos prontos para guiar você com expertise, transparência e comprometimento em todas as etapas do processo. Transforme seus planos imobiliários em realidade conosco</p>
+                </div>
+                <div class="TextoInicial" id="texto5">
+                    <p><span class="material-symbols-outlined">Receipt_Long</span><h1>Assessoria em Processos Licitatórios</h1>Conquiste contratos públicos de forma eficiente com nossa Assessoria em Processos Licitatórios. Contamos com uma equipe especializada que simplifica e maximiza suas chances de sucesso em licitações. Deixe-nos guiar você rumo a oportunidades de negócios no setor público</p>
+                </div>
+                
+                <div class="TextoInicial" id="texto3">
+                    <p><span class="material-symbols-outlined">finance</span><h1>Assessoria Contábil</h1>Transforme a gestão financeira da sua empresa com nossa expertise em assessoria contábil. Garantimos a conformidade fiscal, otimização de recursos e o crescimento sustentável do seu negócio. Conte conosco para o sucesso financeiro!</p>
+                </div>
+                <div class="TextoInicial" id="texto2">
+                    <p><span class="material-symbols-outlined">manage_accounts</span><h1>Assessoria Administrativa</h1>Potencialize a eficiência operacional da sua empresa com a nossa Assessoria Administrativa. Oferecemos soluções sob medida para otimizar processos, reduzir custos e impulsionar o crescimento. Deixe-nos cuidar dos detalhes administrativos para que você possa focar no sucesso do seu negócio</p>
+                </div>
+                
+                
+                <div class="TextoInicial" id="texto4">
+                    <p><span class="material-symbols-outlined">communication</span><h1>Treinamento e Mentoria</h1>Eleve sua excelência com nossos serviços de Treinamento e Mentoria personalizados, preparando sua equipe para vencer desafios e alcançar objetivos com confiança e conhecimento</p>
+                </div>
+                
+
+                <div class="TextoInicial" id="texto6">
+                    <p><span class="material-symbols-outlined">Groups</span><h1>Gestão de Pessoas</h1>Invista no capital humano da sua empresa com a nossa expertise em Gestão de Pessoas. Desenvolvemos estratégias personalizadas para atrair, reter e capacitar talentos, fortalecendo a cultura organizacional e impulsionando o sucesso da sua equipe</p>
+                </div>
+
+               
+
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <h1>empresa</h1><img class="logo" src="logo.png" alt="Logo da Empresa">
+    </footer>
+</body>
+</html>
